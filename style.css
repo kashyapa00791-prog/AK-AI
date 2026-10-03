@@ -1,0 +1,26 @@
+*{box-sizing:border-box}
+:root{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+body{margin:0;background:#07090c;color:#f5f7fa}
+.app{height:100vh;height:100dvh;max-width:980px;margin:auto;display:flex;flex-direction:column;background:#0d1015}
+header{height:68px;display:flex;align-items:center;justify-content:space-between;padding:10px 16px;border-bottom:1px solid #222832;background:#0c0f14}
+.brand{display:flex;gap:11px;align-items:center}.logo{width:42px;height:42px;border-radius:13px;display:grid;place-items:center;background:#fff;color:#080a0d;font-weight:900}
+h1{font-size:19px;margin:0}header small{color:#7e8795}
+.icon,.action,.modes button{border:1px solid #2a303a;background:#151a21;color:#e9edf3;border-radius:11px}
+.icon{font-size:18px;padding:9px 12px}
+.hero{padding:20px 18px 10px}.hero h2{margin:0;font-size:25px}.hero p{margin:5px 0;color:#858e9d}
+.modes{display:flex;gap:8px;overflow:auto;padding:10px 14px;scrollbar-width:none}
+.modes button{white-space:nowrap;padding:9px 12px}.modes button.active{background:#fff;color:#080a0d}
+#chat{flex:1;overflow:auto;padding:14px 16px}
+.msg{max-width:88%;padding:12px 14px;margin:9px 0;border-radius:17px;white-space:pre-wrap;line-height:1.5;overflow-wrap:anywhere}
+.user{margin-left:auto;background:#29303a}.assistant{background:#171c23}
+.status{font-size:12px;color:#697382;padding:3px 16px}
+.actions{display:flex;gap:8px;padding:8px 14px;border-top:1px solid #20252d}
+.action{padding:9px 12px;cursor:pointer}.action input{display:none}
+#web.on{background:#fff;color:#080a0d}
+#form{display:flex;gap:8px;padding:10px 14px 16px}
+textarea{flex:1;resize:none;background:#090c10;color:#fff;border:1px solid #2b313a;border-radius:15px;padding:13px;font:inherit;outline:none}
+#send{width:50px;border:0;border-radius:15px;background:#fff;color:#000;font-size:20px}
+.panel{position:fixed;right:0;top:0;width:min(390px,100%);height:100%;background:#10141a;padding:18px;box-shadow:-10px 0 40px #0008;z-index:10}
+.panelHead{display:flex;justify-content:space-between}.panel button{padding:7px;margin:3px;background:#1d232b;color:white;border:1px solid #333;border-radius:8px}
+.hidden{display:none}.memoryItem{padding:8px;border-bottom:1px solid #2a3038;font-size:13px}
+@media(min-width:700px){.hero{padding-left:25px}.modes{padding-left:20px}#chat{padding-left:25px;padding-right:25px}}
